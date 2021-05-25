@@ -1,22 +1,24 @@
-import logo from './logo.svg';
+
+import { Fragment } from 'react';
 import './App.css';
+
+import Footer from './componets/Footer';
+import Header from './componets/Header';
+import Navbar from './componets/Navbar';
+import Noticia from './componets/Noticia';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+       <Fragment>
+       <Header titulo='EL HERALDO' />
+       <Navbar />
+       <Noticia></Noticia>
+       <Footer > </Footer>
+       </Fragment>
+       
+     
       </header>
     </div>
   );
